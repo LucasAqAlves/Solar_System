@@ -1,0 +1,71 @@
+@keyframes spinner{
+    0%{
+        transform: rotate(0deg, 0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+body{
+    background-color: black;
+}
+
+.space{
+    width: 1200px;
+    height: 800px;
+    background-color: black;
+}
+
+.sun{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: yellow;
+    width: 300px;
+    height: 300px;
+    border-radius: 280px;
+    box-shadow: 0 0 80px #fff;
+} 
+
+
+.earth{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: blue;
+    width: 40px;
+    height: 40px;
+    border-radius: 280px;
+    margin-top: -240px;
+}
+
+.moon{
+    background-color: #fff;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-top: 50px;
+    border-radius: 280px;
+}
+
+.earth_and_moon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: spinner 10s linear infinite
+}
+
+.spinner_moon{
+    position: absolute;
+    left: 0px;
+    width: 40px;
+    height: 40px;
+    animation: spinner 4s linear infinite;
+}
